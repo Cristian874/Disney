@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body class="login__body">
+
+    <main class="login">
+        <img class="logo__login" src="img/logo.svg" alt="logo">
+        <h2 class="login__heading">Inicia sesión con tu correo</h2>
+
+        <form class="login__formulario">
+            <input class="login__input" type="email" placeholder="Correo Electrónico">
+            <input class="login__input login__input--azul" type="submit" value="Continuar">
+        </form>
+        <p class="login__texto">¿Primera vez en Disney+? <span class="login__span">Suscribirte</span></p>
+
+
+
+
+    </main>
+    
+
+    
+
+
+ 
+
+  
+
+  
+
+
+
+    <footer class="footer">
+
+        <div class="footer__contenedor">
+            <img src="img/logo.svg" alt="logo" class="footer__logo">
+
+            <div class="footer__flex">
+
+                <form class="footer__formulario">
+                    <select class="footer__select" name="jumpMenu" id="jumpMenu">
+                      <option value="index.html" class="footer__opcion" selected="select">
+                        Español
+                      </option>
+                      <option value="ingles.html" class="footer__opcion">
+                        English
+                      </option>
+                    </select>
+                  </form>
+                <a href="" class="footer__link">Terminos de uso</a>
+                <a href="" class="footer__link">Politicas de privacidad</a>
+                <a href="" class="footer__link">Publicidad personalizada</a>
+                <a href="" class="footer__link">Dispositivos compatibles</a>
+                <a href="" class="footer__link">Ayuda</a>
+                <a href="" class="footer__link">Acerca de Disney+</a>
+
+
+            </div>
+
+            <p class="footer__texto">
+                © Disney y su familia de conpañias afiliadas. Todos los derechos reservados.
+            </p>
+
+        </div>
+        <p class="footer__texto">Disney+ es un servicio por suscripción de pago, su contenido está sujeto a disponibilidad. El servicio Disney+ es comercializado por WDC (MEXICO), S. DE R.L. DE C.V. Periférico Sur 3299, Piso 11, Colonia Fuentes del Pedregal,
+             Alcaldía Tlalpan, 14140, CDMX y número de RFC WME920221837.</p>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+    $(function (){
+    $("#jumpMenu").change(function(e) {
+    window.location.href = $(this).val();
+    });
+    });
+    </script> 
+  </body>
+</html>
